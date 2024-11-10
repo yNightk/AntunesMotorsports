@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Orçamento - Antunes Motorsport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Solicitação de Orçamento</h2>
+    <form id="budgetForm">
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="service">Tipo de Serviço:</label>
+            <select id="service" required>
+                <option value="" disabled selected>Selecione o serviço</option>
+                <option value="Revisão">Revisão</option>
+                <option value="Troca de Óleo">Troca de Óleo</option>
+                <option value="Alinhamento e balanceamento">Alinhamento</option>
+                <option value="Dinamômetro">Teste Em Dinamômetro</option>
+                <option value="Suspensão">Suspensão</option>
+                <<option value="Scanner">Teste em Scanner</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="details">Detalhes do Veículo:</label>
+            <textarea id="details" rows="4" required></textarea>
+        </div>
+        <button type="button" onclick="sendEmail()">Solicitar Orçamento</button>
+    </form>
+</div>
+
+<script>
+    function sendEmail() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const service = document.getElementById('service').value;
+        const details = document.getElementById('details').value;
+
+        if (name && email && phone && service && details) {
+            const subject = `Orçamento para ${service}`;
+            const body = `Nome: ${name}Email: ${email}Telefone: ${phone}Serviço: ${service}Detalhes do Veículo: ${details}`;
+            window.open(`mailto:mecanicaeautopecas3111@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
+        } else {
+            alert("Por favor, preencha todos os campos.");
+        }
+    }
+</script>
+
+</body>
+</html>
