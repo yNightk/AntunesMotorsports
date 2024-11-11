@@ -116,8 +116,8 @@ footer {
 }
 
 .carousel-slide img {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 50%;
 }
 
 /* Animação do carrossel */
