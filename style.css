@@ -139,8 +139,8 @@ th {
 /* Estilos para o carrossel */
 #carousel {
     position: relative;
-    width: 100%;
-    max-width: 800px;
+    width: 350px;
+    max-width: 450px;
     margin: 2rem auto;
     overflow: hidden;
     border-radius: 10px;
@@ -148,7 +148,7 @@ th {
 
 .carousel-container {
     display: flex;
-    width: 300%;
+    width: 80%;
     animation: slide 12s infinite;
 }
 
