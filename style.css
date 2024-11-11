@@ -131,19 +131,20 @@ th {
     background-color: #333;
     color: white;
 }
-    a[href="budget.html"] {
-        text-align: center;
-        margin: 2fr 4fr;
-        font-weight: bold;
-        color: #3366cc;
-    }
-    
-a {
-  color: #4CAF50;
-  font-weight: bold;
-  text-decoration: none;
-}
 
-a:hover {
-  color: #388E3C;
-}
+container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da tela */
+        }
+        
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
