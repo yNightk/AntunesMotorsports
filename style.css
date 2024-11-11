@@ -137,7 +137,7 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajuste conforme necessário */
+    height: 10px; /* Ajuste conforme necessário */
 }
 
 .budget-button {
