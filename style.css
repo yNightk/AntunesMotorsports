@@ -102,34 +102,6 @@ footer {
     border-radius: 50%;
 }
 
-/* Estilos básicos para o carrossel */
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-slide {
-  display: flex;
-  width: 400%;
-  animation: slide 16s infinite;
-}
-
-.carousel-slide img {
-  width: 50%;
-  height: 50%;
-}
-
-/* Animação do carrossel */
-@keyframes slide {
-  0% { transform: translateX(0%); }
-  25% { transform: translateX(-100%); }
-  50% { transform: translateX(-200%); }
-  75% { transform: translateX(-300%); }
-  100% { transform: translateX(0%); }
-}
-
-/* Tabela de Preços */
 table {
     width: 100%;
     margin: 0 auto;
