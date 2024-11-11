@@ -33,7 +33,6 @@ header nav a:hover {
 }
 
 section {
-    padding: 2rem;
     text-align: center;
 }
 
@@ -136,31 +135,52 @@ th {
     border-radius: 5px;
     text-decoration: none;
 }
-/* Estilos para o carrossel */
+
 #carousel {
     position: relative;
-    width: 350px;
-    max-width: 450px;
-    margin: 2rem auto;
     overflow: hidden;
-    border-radius: 10px;
+    max-width: 100%;
+    margin: 2rem auto;
 }
 
 .carousel-container {
     display: flex;
-    width: 80%;
-    animation: slide 12s infinite;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide img {
     width: 100%;
-    transition: transform 1s ease;
+    max-width: 100%;
+    height: auto;
 }
 
-/* Animação de deslizamento */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 2rem;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
