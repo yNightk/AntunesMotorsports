@@ -132,19 +132,20 @@ th {
     color: white;
 }
 
-a[href="budget.html"] {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Altura total da tela */
-        }
-        
-        .button {
-            padding: 10px 20px;
-            font-size: 18px;
-            color: white;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+/* Centraliza o botão na página */
+.budget-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste conforme necessário */
+}
+
+.budget-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
