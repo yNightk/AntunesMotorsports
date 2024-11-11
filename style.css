@@ -132,7 +132,7 @@ th {
     color: white;
 }
 
-a[href="budget.html"]{
+a[href="budget.html"] {
             display: flex;
             justify-content: center;
             align-items: center;
