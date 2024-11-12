@@ -122,7 +122,7 @@ th {
 .budget-button-container {
     display: flex;
     justify-content: center;
-    height: auto; /* Ajuste conforme necessário */
+    height: 50px; /* Ajuste conforme necessário */
 }
 
 .budget-button {
@@ -139,7 +139,7 @@ th {
     position: relative;
     overflow: hidden;
     max-width: 75%;
-    margin: 2rem auto;
+    margin: 3.5rem auto;
 }
 
 .carousel-container {
