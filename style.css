@@ -144,7 +144,7 @@ th {
 
 .carousel-container {
     display: flex;
-    width: 75%;
+    width: 450px;
     overflow: hidden;
 }
 
