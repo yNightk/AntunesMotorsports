@@ -118,21 +118,28 @@ th {
     color: white;
 }
 
-/* Centraliza o botão na página */
-.budget-button-container {
-    display: flex;
-    justify-content: center;
-    height: 50px; /* Ajuste conforme necessário */
+.container {
+  text-align: center;
 }
 
-.budget-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
+#budgetButton {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#budgetButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#budgetButton:active {
+  background-color: #003f8a;
 }
 
 #carousel {
