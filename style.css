@@ -165,7 +165,20 @@ th {
     gap: 10px;
 }
 
+.carousel-container img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+    width: 200px; /* Define um tamanho fixo para a largura */
+}
+
 /* Responsividade */
+
+@media (max-width: 768px) {
+    .carousel-container img {
+        width: 150px; /* Diminui as imagens em dispositivos menores */
+    }
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
