@@ -1,15 +1,18 @@
+/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo Geral */
 body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
     text-align: center;
     background: #222;
@@ -29,11 +32,14 @@ header nav a {
 }
 
 header nav a:hover {
+    color: #ff9900;
     text-decoration: underline;
 }
 
+/* Seções */
 section {
     text-align: center;
+    padding: 2rem;
 }
 
 h2 {
@@ -41,28 +47,31 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* Serviços */
 #services ul {
     list-style-type: none;
+    padding: 0;
 }
 
 #services li {
     padding: 0.5rem 0;
 }
 
+/* Formulário de Contato */
 #contact form {
     max-width: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 #contact label {
-    margin-top: 0.5rem;
+    font-weight: bold;
 }
 
 #contact input, #contact textarea, #contact button {
     padding: 0.5rem;
-    margin-top: 0.5rem;
     font-size: 1rem;
 }
 
@@ -77,6 +86,7 @@ h2 {
     background-color: #555;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 1rem;
@@ -101,6 +111,7 @@ footer {
     border-radius: 50%;
 }
 
+/* Tabela */
 table {
     width: 100%;
     margin: 0 auto;
@@ -118,39 +129,58 @@ th {
     color: white;
 }
 
-.container {
-  text-align: center;
+/* Botão Genérico */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#budgetButton {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-#budgetButton:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+.button:active {
+    background-color: #003f8a;
 }
 
-#budgetButton:active {
-  background-color: #003f8a;
-}
-
+/* Carrossel */
 #carousel {
     position: relative;
     overflow: hidden;
-    max-width: 450px;
-    margin: 25px;
+    max-width: 100%;
+    margin: 25px auto;
 }
 
 .carousel-container {
     display: flex;
-    width: 450px;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #contact form {
+        padding: 1rem;
+    }
+
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
