@@ -154,7 +154,7 @@ th {
 #carousel {
     position: relative;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 50%;
     margin: 25px auto;
 }
 
