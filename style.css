@@ -150,11 +150,10 @@ th {
     background-color: #003f8a;
 }
 
-/* Carrossel */
 #carousel {
     position: relative;
     overflow: hidden;
-    max-width: 50%;
+    max-width: 100%; /* Ajusta o tamanho do carrossel ao contêiner pai */
     margin: 25px auto;
 }
 
@@ -166,11 +165,12 @@ th {
 }
 
 .carousel-container img {
-    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
-    height: auto; /* Mantém a proporção das imagens */
-    width: 200px; /* Define um tamanho fixo para a largura */
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Ajuste o valor conforme o tamanho desejado */
+    border-radius: 8px; /* Exemplo: bordas arredondadas */
+    object-fit: cover; /* Ajusta como a imagem é recortada (opcional) */
 }
-
 /* Responsividade */
 
 @media (max-width: 768px) {
